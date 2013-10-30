@@ -1,0 +1,52 @@
+1.clone your fork
+git clone https://github.com/username/Spoon-Knife.git
+# Clones your fork of the repository into the current directory in terminal
+
+2.config remotes
+# Changes the active directory in the prompt to the newly cloned "Spoon-Knife" directory
+git remote add upstream https://github.com/octocat/Spoon-Knife.git
+# Assigns the original repository to a remote called "upstream"
+git fetch upstream
+# Pulls in changes not present in your local repository, without modifying your files
+
+3.push commits
+git push origin master
+# Pushes commits to your remote repository stored on GitHub
+
+4.pull in upstream changes
+Pull
+
+git pull upstream master
+# Pulls commits from 'upstream' and stores them in the local repository
+
+Fetch & Merge
+git fetch upstream
+# Fetches any new changes from the original repository
+git merge upstream/master
+# Merges any changes fetched into your working files
+
+5.create branches
+Branches are pretty easy to work with and will save you a lot of headaches, especially when working with multiple people. To create a branch and begin working in it, run these commands:
+
+git branch mybranch
+# Creates a new branch called "mybranch"
+git checkout mybranch
+# Makes "mybranch" the active branch
+Alternatively, you can use the shortcut:
+
+git checkout -b mybranch
+# Creates a new branch called "mybranch" and makes it the active branch
+To switch between branches, use git checkout.
+
+git checkout master
+# Makes "master" the active branch
+git checkout mybranch
+# Makes "mybranch" the active branch
+Once you're finished working on your branch and are ready to combine it back into the master branch, use merge.
+
+git checkout master
+# Makes "master" the active branch
+git merge mybranch
+# Merges the commits from "mybranch" into "master"
+git branch -d mybranch
+# Deletes the "mybranch" branch
