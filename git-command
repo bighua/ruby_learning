@@ -50,3 +50,13 @@ git merge mybranch
 # Merges the commits from "mybranch" into "master"
 git branch -d mybranch
 # Deletes the "mybranch" branch
+
+6.status
+git status
+cd yy && git init => new repository
+xx.xx         => untracked
+git add xx.xx => stage
+git commit -m 'comments to commit'
+
+7.git log 
+.gitignore: untracked file config file
