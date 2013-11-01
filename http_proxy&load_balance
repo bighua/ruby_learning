@@ -1,0 +1,6 @@
+CDN：Content Delivery Network
+
+http加速,反向缓存：squid，varnish
+反向代理:Nginx,haproxy
+软件负载均衡：Nginx,haproxy 7层：应用层上;LVS 4层：传输层
+硬件负载均衡：F5...
